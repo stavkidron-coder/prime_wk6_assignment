@@ -9,9 +9,9 @@ You'll find that a 'client.js' file already exists and is linked to the HTML fil
 
 You can test these by running the following commands in the console:
 
-- ```garage``` (will show an empty array at first)
-- ```newCar( 1991, 'Plymouth', 'Horizon' )```
-- ```garage``` (should now show an array with the one car input above within)
+- `garage` (will show an empty array at first)
+- `newCar(1991, 'Plymouth', 'Horizon')`
+- `garage` (should now show an array with the one car input above within)
 
 ## Assignment
 
@@ -28,11 +28,14 @@ Also an "add car" button that, when clicked, *uses the existing "newCar" functio
 
 3. Add some styling via a CSS file (the file has been created, you need to source it into your HTML)
 
+**REMINDER**: Make sure to respond to this week's Slack discussion question!
+
 ### Stretch Goals
 
 - Clear inputs when a car is added
 - don't allow a car to be added if any fields are left blank
 - have a maximum number of spaces in the garage. Disable inputs if the garage is full
 - add another input field, this one should take in text for a url to an image (like a Google image result when you search for `car`), add it to the object with the rest of the car's information, and display the image (using an `<img>` tag) for each car as well as its year/make/model text
-
-**REMINDER**: Make sure to respond to this week's Slack discussion question!
+- add another required input field, this one should take in the price of the car. The price should be listed on the DOM
+- The total price for all of the cars in the garage should be listed at the top of the DOM, and it should be updated every time a new car is added
+- Add animation to your images to show the new cars being parked in the garage

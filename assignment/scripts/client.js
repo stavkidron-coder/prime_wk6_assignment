@@ -1,11 +1,11 @@
 let garage = [];
 
-function newCar( yearIn, makeIn, modelIn ){
-  console.log( 'in newCar:', yearIn, makeIn, modelIn );
-  let newCarObject = {
-    year: yearIn,
-    make: makeIn,
-    model: modelIn
+function newCar(yearInput, makeInput, modelInput){
+  console.log('in newCar:', yearInput, makeInput, modelInput);
+  const newCarObject = {
+    year: yearInput,
+    make: makeInput,
+    model: modelInput
   }
   garage.push(newCarObject);
   return true;
