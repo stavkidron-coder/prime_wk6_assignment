@@ -1,5 +1,8 @@
 let garage = [];
 
+/*
+Do not change newCar for base mode!
+*/
 function newCar(yearInput, makeInput, modelInput){
   console.log('in newCar:', yearInput, makeInput, modelInput);
   const newCarObject = {
