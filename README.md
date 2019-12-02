@@ -13,6 +13,8 @@ You can test these by running the following commands in the console:
 - `newCar(1991, 'Plymouth', 'Horizon')`
 - `garage` (should now show an array with the one car input above within)
 
+You should not change the `newCar` function for base mode. Some of the stretch goals may require a change.
+
 ## Assignment
 
 ### Required Features
