@@ -1,6 +1,19 @@
 body {
+  font-family: 'Roboto', sans-serif;
+  color: #f2f2f2;
   text-align: center;
   background-color: white;
+  /* background-image: url(https://dornob.com/wp-content/uploads/2014/09/West-Bellevue-House-3.jpg); */
+  background-image: url(https://www.setaswall.com/wp-content/uploads/2017/03/4K-Car-Garage-Tuning-Wallpaper-3840x2160.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bodyContainer {
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-radius: 5px;
 }
 
 #addCarButton {
@@ -9,18 +22,38 @@ body {
 }
 
 .jumbotron {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 5px;
+  color: black;
   text-align: center;
   margin-top: 25px;
   margin-bottom: 50px;
   width: auto;
-  background-color: #d1fffb;
+  background-color: #c98f4d;
+  background-image: url(https://i.pinimg.com/originals/8f/87/c8/8f87c8da6897e36bfe68aada00bb56bc.jpg);
+  background-size: cover;
 }
 
-ul {
+ul li{
+  color: black;
   list-style: none;
   padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 3px;
 }
 
 h2 {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+input {
+  background-color: #f2f2f2;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  margin-bottom: 25px;
 }

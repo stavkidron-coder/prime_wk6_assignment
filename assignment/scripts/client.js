@@ -42,6 +42,7 @@ function addCar(){
     // push the newCar into the parkedCars array
     if(parkedCars.length < maxCars){
       parkedCars.push(newCar);
+      
     }
 
   // empty the inputs

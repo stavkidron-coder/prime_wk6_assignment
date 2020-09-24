@@ -6,32 +6,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="scripts/client.js" charset="utf-8"></script>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Week 6 Tier 1 Assignment</title>
   </head>
   <body>
 
-    <div class="container">
+    <div class="container" id='bodyContainer'>
 
-      <!-- Jumbotron -->
+<!-- Jumbotron -->
       <div class="jumbotron">
-        <!-- <img src="https://dornob.com/wp-content/uploads/2014/09/West-Bellevue-House-3.jpg" alt="Garage"> -->
         <h1 class="display-4">Parking Garage</h1>
       </div> <!-- end Jumbotron -->
 
 
+<!-- Add car inputs -->
     <div class="container">
-      <h2 class="display-8">Enter a Car!</h2>
+      <h2 class="display-8">ENTER A CAR</h2>
+      <hr>
 
-      <input type="text" placeholder="Car Year" id='carYearIn'>
-      <input type="text" placeholder="Car Make" id='carMakeIn'>
-      <input type="text" placeholder="Car Model" id='carModelIn'>
-      <input type="text" placeholder="Car Price" id='carPriceIn'>
+      <input class="col-2" type="text" placeholder="Car Year" id='carYearIn'>
+      <input class="col-2" type="text" placeholder="Car Make" id='carMakeIn'>
+      <input class="col-2" type="text" placeholder="Car Model" id='carModelIn'>
+      <input class="col-2" type="text" placeholder="Car Price" id='carPriceIn'>
 
-      <button id='addCarButton' type="button" class="btn btn-primary btn-lg btn-block">Add Car</button>
+      <button id='addCarButton' type="button" class="btn btn-primary btn-sm col-3">Add Car</button>
 
     </div>
 
-    <!-- Cars in Garage -->
+<!-- Cars in Garage -->
+
     <div class="container row">
       <div class="col-6">
 
@@ -42,15 +45,16 @@
 
       </div> <!-- end left column -->
 
-      <!-- Price of cars -->
+<!-- Price of cars -->
+
       <div class="col-6">
         <h3>Car Prices:</h3>
-        <ul id='carPrices'>    
+        <ul id='carPrices'>
         </ul>
       </div>
-    </div>
+    </div> <!-- end column div -->
 
-    </div>
+  </div> <!-- end body container -->
 
 <!-- bootstrap jQuery and js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
