@@ -10,25 +10,47 @@
   </head>
   <body>
 
-    <div class="jumbotron">
-      <!-- <img src="https://dornob.com/wp-content/uploads/2014/09/West-Bellevue-House-3.jpg" alt="Garage"> -->
-      <h1 class="display-4">Parking Garage</h1>
+    <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <!-- <img src="https://dornob.com/wp-content/uploads/2014/09/West-Bellevue-House-3.jpg" alt="Garage"> -->
+        <h1 class="display-4">Parking Garage</h1>
+      </div> <!-- end Jumbotron -->
+
+
+    <div class="container">
       <h2 class="display-8">Enter a Car!</h2>
+
+      <input type="text" placeholder="Car Year" id='carYearIn'>
+      <input type="text" placeholder="Car Make" id='carMakeIn'>
+      <input type="text" placeholder="Car Model" id='carModelIn'>
+      <input type="text" placeholder="Car Price" id='carPriceIn'>
+
+      <button id='addCarButton' type="button" class="btn btn-primary btn-lg btn-block">Add Car</button>
+
     </div>
 
+    <!-- Cars in Garage -->
+    <div class="container row">
+      <div class="col-6">
 
-  <div class="container">
-    <input type="text" placeholder="Car Year" id='carYearIn'>
-    <input type="text" placeholder="Car Make" id='carMakeIn'>
-    <input type="text" placeholder="Car Model" id='carModelIn'>
-    <button id='addCarButton' type="button" class="btn btn-primary btn-lg btn-block">Add Car</button>
-  </div>
+        <h3>Cars in Garage: </h3>
 
-  <div class="container">
-    <h3>Cars in Garage: </h3>
-    <ul id='carsOut'>
-    </ul>
-  </div>
+        <ul id='carsOut'>
+        </ul>
+
+      </div> <!-- end left column -->
+
+      <!-- Price of cars -->
+      <div class="col-6">
+        <h3>Car Prices:</h3>
+        <ul id='carPrices'>    
+        </ul>
+      </div>
+    </div>
+
+    </div>
 
 <!-- bootstrap jQuery and js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
