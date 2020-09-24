@@ -18,26 +18,6 @@ function readyNow(){
 } //end readyNow function
 
 
-function addCar(){
-  console.log('in addCar');
-
-  // get user input and create a new object
-  let newCar = {
-    year: $('#carYearIn').val(),
-    make: $('#carMakeIn').val(),
-    model: $('#carModelIn').val()
-  };
-
-  // push the new car into the array
-  parkedCars.push(newCar);
-  // empty the inputs
-  $('#carYearIn').val('');
-  $('#carMakeIn').val('');
-  $('#carModelIn').val('');
-
-} // end addCar function
-
-
 /*
 Do not change newCar for base mode!
 */
@@ -51,3 +31,36 @@ function newCar(yearInput, makeInput, modelInput){
   garage.push(newCarObject);
   return true;
 } // end newCar
+
+
+
+function addCar(){
+  // get user input and create a new object
+  let newCar = {
+    year: $('#carYearIn').val(),
+    make: $('#carMakeIn').val(),
+    model: $('#carModelIn').val()
+  };
+
+  // push the newCar into the parkedCars array
+  parkedCars.push(newCar);
+  // empty the inputs
+  $('#carYearIn').val('');
+  $('#carMakeIn').val('');
+  $('#carModelIn').val('');
+
+  // display
+  displayCars();
+} // end addCar function
+
+function displayCars(){
+  // target output by its ID
+  let el = $('#carsOut');
+  // empty
+  el.empty();
+  // loop through cars
+  for(let car of parkedCars){
+    el.append(`<li>` + car.year + ' ' + car.make + ' ' + car.model + ' ' + `</li>`);
+  } // end for loop
+  // for each car, create a list item
+} //end displayCars
