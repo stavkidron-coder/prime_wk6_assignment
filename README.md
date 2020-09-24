@@ -3,7 +3,7 @@
 In this week's assignment, you've been given a project that allows users to add cars to a garage. Your assignment is to use jQuery to connect this functionality to the DOM. Also, make sure to add some styling via CSS.
 
 ## Existing Script
-You will need to source jQuery in your index.html in order to complete this assignment. If you need some help doing this, take a look at the instructions [here](jQuery_instructions.md). 
+You will need to source jQuery in your index.html in order to complete this assignment. If you need some help doing this, take a look at the instructions [here](jQuery_instructions.md).
 
 You'll find that a 'client.js' file already exists and is linked to the HTML file. In here most of the scripting logic is already working. When run, the "newCar" function creates a new car object and pushes it into the "garage" array.
 

@@ -42,8 +42,10 @@ function addCar(){
     model: $('#carModelIn').val()
   };
 
-  // push the newCar into the parkedCars array
-  parkedCars.push(newCar);
+    // push the newCar into the parkedCars array
+    parkedCars.push(newCar);
+
+
   // empty the inputs
   $('#carYearIn').val('');
   $('#carMakeIn').val('');
@@ -53,6 +55,9 @@ function addCar(){
   displayCars();
 } // end addCar function
 
+
+
+
 function displayCars(){
   // target output by its ID
   let el = $('#carsOut');
@@ -60,7 +65,7 @@ function displayCars(){
   el.empty();
   // loop through cars
   for(let car of parkedCars){
-    el.append(`<li>` + car.year + ' ' + car.make + ' ' + car.model + ' ' + `</li>`);
+    el.append(`<li class="list-group-item">` + car.year + ' ' + car.make + ' ' + car.model + ' ' + `</li>`);
   } // end for loop
   // for each car, create a list item
 } //end displayCars
