@@ -35,9 +35,15 @@ Also an "add car" button that, when clicked, *uses the existing "newCar" functio
 ### Stretch Goals
 
 - Clear inputs when a car is added <!-- Completed -->
+
 - don't allow a car to be added if any fields are left blank <!-- completed -->
+
 - have a maximum number of spaces in the garage. Disable inputs if the garage is full <!-- Completed -->
+
 - add another input field, this one should take in text for a url to an image (like a Google image result when you search for `car`), add it to the object with the rest of the car's information, and display the image (using an `<img>` tag) for each car as well as its year/make/model text
-- add another required input field, this one should take in the price of the car. The price should be listed on the DOM
+
+- add another required input field, this one should take in the price of the car. The price should be listed on the DOM <!-- Completed -->
+
 - The total price for all of the cars in the garage should be listed at the top of the DOM, and it should be updated every time a new car is added
+
 - Add animation to your images to show the new cars being parked in the garage
