@@ -39,10 +39,30 @@ function addCar(){
     price: $('#carPriceIn').val()
   };
 
-    // push the newCar into the parkedCars array
+    // push the newCar into the parkedCars array if all inputs are filled
+
+    // if year input is not defined, do not add car to array
+    if(!newCar.year && newCar.make && newCar.model && newCar.price){
+      return 'Car not added';
+    }
+
+    // if make input is not defined, do not add car to array
+    if(newCar.year && !newCar.make && newCar.model && newCar.price){
+      return 'Car not added';
+    }
+
+    // if model input is not defined, do not add car to array
+    if(newCar.year && newCar.make && !newCar.model && newCar.price){
+      return 'Car not added';
+    }
+
+    // if price input is not defined, do not add car to array
+    if(newCar.year && newCar.make && newCar.model && !newCar.price){
+      return 'Car not added';
+    }
+
     if(parkedCars.length < maxCars){
       parkedCars.push(newCar);
-      
     }
 
   // empty the inputs
